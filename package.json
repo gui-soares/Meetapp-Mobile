@@ -6,7 +6,9 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "postinstall": "jetify"
+    "postinstall": "jetify",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -26,7 +28,8 @@
     "redux": "^4.0.4",
     "redux-persist": "^5.10.0",
     "redux-saga": "^1.0.5",
-    "styled-components": "^4.3.2"
+    "styled-components": "^4.3.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -52,5 +55,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "snyk": true
 }
